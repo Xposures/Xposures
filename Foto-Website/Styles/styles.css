@@ -1,0 +1,292 @@
+html{
+    font-family: 'Playfair Display', serif;
+    margin: 0%;
+    height: 100%;
+}
+.headline {
+    font-family: 'Agbalumo', serif;
+    text-align: center;
+    font-size: 60px;
+    color: #59769E;
+}
+hr {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    height: 10;
+}
+.text {
+    font-size: 20px;
+    font-family: 'Playfair Display' ;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+.footer {
+    position:relative;
+    font-family: "Playfair Display";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #DED7CD;
+    color: black;
+    text-align: center;
+}
+/*Links*/
+a:link {
+    color: #59769E;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+  a:visited {
+    color: #59769E;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+  a:hover {
+    color: #59769E;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+  a:active {
+    color: #59769E;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.header {
+    font-family:'Abgalumo' ;
+    padding: 20px;
+    text-align: right;
+    background: #1a35bc;
+    color: white;
+    font-size: 10px;
+  }
+/*Navbar styles*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  box-sizing: border-box;
+}
+body{
+	background: #DED7CD;
+  margin: 0;
+}
+ul{
+	display: flex;
+	width: 100%;
+	height: 20vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  font-family: 'Agbalumo';
+  cursor: pointer;
+  color: #59769E;
+	min-width: 80px;
+	margin: auto;
+}
+
+li:hover {
+  background-size: 100% 100%;
+  color: #59769E;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #9c4680;
+	font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.top{
+    background-color: #DED7CD;
+}
+/*verschwommenes Bild auf Über Mich Seite*/
+.bg-image {
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  margin-top: 8%;
+}
+
+/* Text in der Mitte des Bildes */
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 35%;
+}
+/*zentrieren des Logos*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*zentrieren von Bildern*/
+.center-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000099;
+  
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
